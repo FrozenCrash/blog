@@ -9,6 +9,7 @@ gem 'jquery-rails'
 gem 'turbolinks'
 gem 'jbuilder', '~> 2.0'
 gem 'sdoc', '~> 0.4.0', group: :doc
+gem 'devise', '~> 3.5.2'
 
 group :production do
 	gem 'pg'
@@ -16,7 +17,7 @@ group :production do
 end
 
 group :development, :test do
-	gem 'devise', '~> 3.3.0'
+
   gem 'byebug'
   gem 'web-console', '~> 2.0'
   gem 'spring'
