@@ -27,9 +27,11 @@
 			<li><a href="https://github.com/frozencrash">GitHub</a></li>
 			<li><a href="mailto:zzcrash@gmail.com">Email</a></li>
 		</ul>
+
 		<% if !user_signed_in? %>
-		<p class="sign_in">Admin Login</p>
+		<p class="sign_in"><%= link_to "Admin Login", new_user_session_path %></p>
     <%end %>
+
   </div>
  
   <div id="main_content">
@@ -49,7 +51,7 @@
             New post
           </button>
           </a>
-          <button class="button">Log Out</button>
+          <button class="button"><%= link_to "Sign Out", destroy_user_session_path, method: :delete %></button>
         </div>
       <% end %>
     
