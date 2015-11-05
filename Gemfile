@@ -16,11 +16,9 @@ group :production do
 end
 
 group :development, :test do
-
+	gem 'devise', '~> 3.3.0'
   gem 'byebug'
-
   gem 'web-console', '~> 2.0'
-
   gem 'spring'
 end
 
